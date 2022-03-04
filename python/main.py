@@ -4,4 +4,7 @@
 # But unlike JS; Ruby & Python have strict typing.
 # Ruby & Python are very similar.
 
-print "Hello, World!"
+from item import Item
+
+unser_item = Item()
+print(unser_item.calc_total_price())
