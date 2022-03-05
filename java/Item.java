@@ -1,7 +1,10 @@
+import java.util.*;
+
 public class Item {
   // Class variables
   // They are generally kept private
   private static double discountRate = 0.8;
+  private static List<Item> all = new ArrayList<>();
 
   // Instance variables
   // They too are generally kept private
@@ -47,11 +50,21 @@ public class Item {
     price = selfPrice;
     qty = selfQty;
     instPayRate = discountRate;
+
+    all.add(this);
   }
 
   // Attribute Getter method
-  public double price() {
+  public double getPrice() {
     return price;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getQuantity() {
+    return qty;
   }
 
   public double calcTotalPrice() {
@@ -60,5 +73,9 @@ public class Item {
 
   public void applyDiscount() {
     price *= instPayRate;
+  }
+
+  public static List<Item> getAllItems() {
+    return all;
   }
 }

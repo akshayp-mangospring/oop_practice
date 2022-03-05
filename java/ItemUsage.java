@@ -17,5 +17,13 @@ public class ItemUsage {
         System.out.println("Instance variable: " + field.getName());
       }
     }
+
+    myObj.applyDiscount();
+
+    // In Java we don't have string interpolation, we have string concatenation & we can most get to String Formatting
+    // System.out.println("Price after discount: " + myObj.price());
+    System.out.println(
+      String.format("Price after discount: %.2f", myObj.getPrice())
+    );
   }
 }

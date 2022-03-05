@@ -6,19 +6,10 @@
 
 from item import Item
 
-mein_item = Item("Phone", 100, 15)
+item1 = Item("Phone", 100, 1)
+item2 = Item("Laptop", 1000, 3)
+item3 = Item("Cable", 10, 5)
+item4 = Item("Mouse", 50, 5)
+item5 = Item("Keyboard", 75, 5)
 
-zweites_item = Item("Laptop", 1000, 3)
-
-print(mein_item.calc_total_price())
-print(zweites_item.calc_total_price())
-
-print(Item.pay_rate)
-print(mein_item.pay_rate)
-
-# Gets all attributes for the class level
-print(Item.__dict__)
-# Gets all attributes for the instance level
-print(mein_item.__dict__)
-mein_item.apply_discount()
-print(mein_item.price)
+print(Item.all)
