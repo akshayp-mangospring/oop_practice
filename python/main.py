@@ -20,3 +20,5 @@ print(mein_item.pay_rate)
 print(Item.__dict__)
 # Gets all attributes for the instance level
 print(mein_item.__dict__)
+mein_item.apply_discount()
+print(mein_item.price)
