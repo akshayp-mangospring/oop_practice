@@ -1,7 +1,7 @@
 ### To run programs in Java
 ```
 cd java
-javac ./Main.java
+javac ./*.java
 java Main
 ```
 ### To run programs in Ruby

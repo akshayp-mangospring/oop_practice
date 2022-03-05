@@ -1,8 +1,8 @@
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Field;
 
-public class Main {
-  public static void main(String args[]) {
+public class ItemUsage {
+  public static void getItemInfo() {
     Item myObj = new Item("Phone", 100, 5);
     System.out.println(myObj.calcTotalPrice());
 
