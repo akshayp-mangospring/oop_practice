@@ -2,7 +2,7 @@ require './stack'
 
 class IntStack < Stack
   def push(item)
-    if is_int?(item)
+    if int?(item)
       @items.push(item)
     else
       puts "Invalid item: #{item} entered. This stack accepts integers only"
@@ -11,7 +11,7 @@ class IntStack < Stack
 
   private
 
-  def is_int?(item)
+  def int?(item)
     item.to_s.match(/^\d+$/i)
   end
 end
