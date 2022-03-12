@@ -2,6 +2,7 @@ function Stack() {
   this.items = [];
 }
 
+// Adding methods or properties to prototype ensures that methods & properties are available across all instances of the class
 Stack.prototype.push = function (item) {
   this.items.push(item);
 }
