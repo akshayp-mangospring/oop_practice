@@ -19,3 +19,13 @@ python ./main.py
 cd python
 python3 ./main.py
 ```
+### To run programs in Node JS
+```
+cd node
+node ./stack.js
+```
+### To run programs in Go
+```
+cd go
+go run ./stack.go
+```

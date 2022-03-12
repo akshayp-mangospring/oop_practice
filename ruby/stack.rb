@@ -12,7 +12,7 @@ class Stack
   end
 
   def peek
-    @items[@items.length -  1]
+    @items[@items.length - 1]
   end
 
   def all
