@@ -2,6 +2,7 @@
 # Dir['./*.rb'].each { |file| require file }
 
 require './item'
+require './int_stack'
 
 # mein_item = Item.new('Phone', 100, 5)
 # puts mein_item.calc_total_price
@@ -21,3 +22,16 @@ item5 = Item.new('Keyboard', 75, 5)
 
 puts Item.all
 puts Item.pay_rate
+
+mein_stack = IntStack.new
+mein_stack.push(20)
+mein_stack.push(30)
+mein_stack.push('a')
+mein_stack.push({})
+mein_stack.push(true)
+mein_stack.push(213)
+mein_stack.push(324)
+mein_stack.push(213)
+mein_stack.pop()
+
+puts mein_stack.all
