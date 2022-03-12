@@ -13,5 +13,17 @@ public class Main {
         )
       );
     }
+
+    Stack meinStack = new Stack();
+    meinStack.push(20);
+    meinStack.push(30);
+    meinStack.push(32340);
+    meinStack.pop();
+    meinStack.push(432);
+    meinStack.push(3);
+    meinStack.push(40);
+
+    System.out.println(meinStack.all());
+    System.out.println(meinStack.peek());
   }
 }
